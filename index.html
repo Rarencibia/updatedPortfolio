@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesheets/dist/index.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="stylesheets/dist/index.css">
     <title>Arencibia Portfolio</title>
 
 </head>
@@ -17,7 +17,8 @@
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Skills</a></li>
                 <li><a href="#">Projects</a></li>
-                <li><a href="#">About Me</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
         <div class="logoHeader">
@@ -31,60 +32,96 @@
         </div>
     </header>
 
-    <aside>
-            <div class="socialMediaLinksWrapper">
-                <a href="https://github.com/Rarencibia"><img class="socialMediaLink" src="images/github.png" alt="Link to Github" title="My Github"></a>
-                <a href="https://www.linkedin.com/in/robert-arencibia-95ba851b4/"><img class="socialMediaLink" src="images/linkedIn.png" alt="Link to LinkedIn" title="My LinkedIn"></a>
-                <a href="https://app.netlify.com/teams/rarencibia/overview"><img class="socialMediaLink" src="images/netlify.png" alt="Link to netlify" title="My Netlify"></a>
-            </div>
+    <article>
+        <div class="mediaAndIntro">
 
-    
-    </aside>
+            <aside>
+                <div class="socialMediaLinksWrapper">   
+                    <a href="https://github.com/Rarencibia"><img class="socialMediaLink" src="images/github.png" alt="Link to Github" title="My Github"></a>
+                    <a href="https://www.linkedin.com/in/robert-arencibia-95ba851b4/"><img class="socialMediaLink" src="images/linkedIn.png" alt="Link to LinkedIn" title="My LinkedIn"></a>
+                    <a href="https://app.netlify.com/teams/rarencibia/overview"><img class="socialMediaLink" src="images/netlify.png" alt="Link to netlify" title="My Netlify"></a>
+                </div>
+            </aside>
+            <div class="miniIntro">
+                <p class="miniIntroP">Hello, I'm <span class="emphasis">Robert Arencibia</span>. I'm a professional <span class="emphasis">Full Stack Web Developer</span>. 
+                    Let's take your business or idea one step further. Let's create that reality together. Scroll to learn more about me and see my past projects.</p>
+            </div>
+        </div>
+    </article>
+
 
     <main>
-        <article>
-            <h1 class="myProjectsHeader">My Projects</h1>
+        <section>
             <div class="projectsDisplayWrapper" >
                 
                 <div class="projectShowcase"></div>
                 <div class="projectShowcase"></div>
                 <div class="projectShowcase"></div>
-                <div class="projectShowcase"><a href="https://confident-haibt-690550.netlify.app/"><img class ="screenshotImg" src="images/Screenshot 2.png" alt="Band Website Template"></a>
+                <div class="projectShowcase"><a href="https://confident-haibt-690550.netlify.app/"><img class ="screenshotImg" src="images/Screenshot 2.png" alt="Band Website Template" title="Band Website Template"></a>
                     <a href="#"><button class="githubCode" type="button">Github Code</button></a> 
                 </div>
                 
-                <div class="projectShowcase"><a href="https://reverent-bhabha-00398f.netlify.app/"><img class ="screenshotImg" src="images/Screenshot 3.png" alt="Find the ISS"></a>
+                <div class="projectShowcase"><a href="https://tender-perlman-f34510.netlify.app/"><img class ="screenshotImg" src="images/blogTemplate.png" alt="Blog Template" title="Blog Template"></a>
                     <a href="#"><button class="githubCode" type="button">Github Code</button></a>
                 </div>
                 
-                <div class="projectShowcase"><a href="https://modest-hamilton-992def.netlify.app/"><img class ="screenshotImg" src="images/Screenshot 4.png" alt="Diner Website Template"></a>
+                <div class="projectShowcase"><a href="https://modest-hamilton-992def.netlify.app/"><img class ="screenshotImg" src="images/Screenshot 4.png" alt="Diner Website Template" title="Diner Website Template"></a>
                     <a href="#"><button class="githubCode" type="button">Github Code</button></a>
                 </div>
             </div>
-        </article>
+        </section>
 
-        <article>
-            <div class="skillsWrapper">
+        <section>
+            <div class="technologiesSection">
                 <div class="skillsList">
-
+                    <h1>Commonly Used Technologies</h1>
+                </div>
+                <div id="skillsWrapper" class="skillsWrapper">
+                    
                 </div>
             </div>
-        </article>
+        </section>
+
+
+        <section>
+            <div class="aboutMeWrapper">
+                <div class="aboutMeHeader">
+                    <img class="avatarImg" src="images/avatar.png" alt="My avatar" title="Avatar Selfie">
+                    <h1>A Little About Me</h1>
+                </div>
+                <div class="aboutMeInfoWrapper">
+                    <p class="aboutMeP">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis est quo, necessitatibus, nam illo reiciendis mollitia ut earum culpa expedita possimus atque sequi! Ad dicta aperiam maxime maiores consequuntur explicabo temporibus asperiores dolorem ratione, ipsum, vitae iure. Eveniet, harum eos. Ipsa velit corporis quisquam reiciendis harum. Incidunt dicta repellat ad nulla nostrum enim at ipsa ratione earum, a qui laborum veniam natus, debitis quaerat animi distinctio, facilis explicabo. Explicabo, unde?                        
+                        <!-- { <br>
+                            &emsp;"aboutMeInfo": [ <br>
+                            &emsp;&emsp;{"Name": "Robert Arencibia", <br>
+                            &emsp;&emsp;"Occupation": "Full Stack Web Development", <br>
+                            &emsp;&emsp;"": ["Websites", ""] <br>
+                            
+                            &emsp;}] <br>
+                        } -->
+                    </p>
+                    <p class="aboutMeP2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, magni. Quas labore blanditiis fugit voluptatum quos harum nam aperiam quae aut minus consequuntur ducimus modi dolorum quo quisquam accusantium itaque voluptates illo tempore at molestiae hic, officiis, sit magnam. Corrupti sequi nulla voluptates architecto fuga facere consequatur excepturi cupiditate deserunt quasi, laborum dolores possimus sunt earum at. Eligendi, itaque nam.</p>
+                </div>
+            </div>
+        </section>
 
     </main>
 
 
-    <!-- <footer>
+
+
+    <footer>
         <hgroup>
             <div class="footerInformation">
                 <h4>Robert Arencibia - Full Stack Web Developer</h4>
                 <h5>Let's bring your idea's to life</h5>
             </div>
         </hgroup>
-    </footer> -->
+    </footer>
 
-    <script src="javascript/skills.js"></script>
     <script src="javascript/name.js"></script>
+    <script src="javascript/skills.js"></script>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
@@ -93,5 +130,8 @@
           easing: 'ease'
       });
     </script>
+
+
+
 </body>
 </html>

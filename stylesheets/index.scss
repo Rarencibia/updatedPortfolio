@@ -1,11 +1,13 @@
 @import './mixins';
 
 $default-font-color: white;
-
-
+$separation-margin: 300px;
+$border: 3px solid white;
+$special-font-color: rgb(253, 212, 176);
 
 body {
     background-color: black;
+    color: white;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -28,7 +30,7 @@ header {
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        gap: 100px;
+        gap: 50px;
     }
 
     li {
@@ -114,7 +116,7 @@ header {
 
     }
 
-    #R,#E,#N,#C,#I,#B,#I,#A{
+    #A,#R,#E,#N,#C,#I,#B,#I{
         @include keyframeAnimation(flip);
         @include keyframeDuration(flip);
     }
@@ -127,41 +129,69 @@ header {
 
 
 
-.socialMediaLinksWrapper {
-    margin-top: 15%;
-    min-width: 8%;
-    max-width: 8%;
-    min-height: 50%;
-    max-height: 50%;
-    padding: 5px;
+.mediaAndIntro {
     display: flex;
-    flex-direction: column;
+    margin-top: $separation-margin;
+    width: 100%;
+    height: auto;
     align-items: center;
-    gap: 30px;
-    background-color: gray;
-    opacity: .70;
-    border-radius: 1%;
+    .miniIntro {
+        margin: auto;
+    }
+    .miniIntroP {
+        margin: auto;
+        text-align: center;
+        width: 70%;
+        font-size: 22px;
+        font-weight: 600;
+    }
 
-    .socialMediaLink {
-        width: 50px;
-        height: 50px;
-        box-shadow: 3px 3px 10px white;
+    .emphasis {
+        color: $special-font-color;
+        font-size: 30px;
+        font-weight: 900;
 
     }
-        a {
-            text-align: center;
-            min-width: 80%;
-            max-width: 80%;
-            min-height: 80%;
-            max-width: 80%;
-            margin: auto;
 
-            &:hover {
-                @include keyframeAnimation(mediaFlip);
+
+
+
+    .socialMediaLinksWrapper {
+        margin-top: 15%;
+        min-width: 80px;
+        max-width: 80px;
+        min-height: 230px;
+        max-height: 100px;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        background-color: gray;
+        opacity: .70;
+        border-radius: 1%;
+    }
+        .socialMediaLink {
+            width: 50px;
+            height: 50px;
+            box-shadow: 3px 3px 10px white;
     
-                @include keyframeDuration(mediaFlip);
-            }
         }
+            a {
+                text-align: center;
+                min-width: 80%;
+                max-width: 80%;
+                min-height: 80%;
+                max-width: 80%;
+                margin: auto;
+    
+                &:hover {
+                    @include keyframeAnimation(mediaFlip);
+        
+                    @include keyframeDuration(mediaFlip);
+                }
+            }
+    
 }
 
 main {
@@ -216,15 +246,15 @@ main {
         justify-content: center;
         margin: auto;
         color: white;
-        border-radius: 1%;
+        border-radius: 10%;
         background: black;
-        border: 3px solid white;
+        border: 1px solid white;
         &:hover {
             cursor: pointer;
             transition: ease-in-out;
             transition-duration: .5s;
-            background-color: white;
-            color: red;
+            background-color: gray;
+            color: $special-font-color;
         }
     }
 
@@ -232,17 +262,91 @@ main {
         text-decoration: none;
     }
 
+
+    .technologiesSection {
+        margin-top: $separation-margin;
+    }
+
+    .skillsList {
+
+        text-align: center;
+    }
+
+
+    .skillsWrapper {
+        display: grid;
+        grid-template-columns: repeat( auto-fit, minmax(350px, 5fr));
+        justify-content: center;
+        align-items: center;
+        place-items: center;
+        gap: 20px;
+        width: 100%;
+        background: gray;
+        padding: 20px;
+    }
+
+    .skillsImg {
+        width: 200px;
+        height: 180px;
+        object-fit: contain;
+    }
+
+    .skillsName{
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+
+    .aboutMeWrapper {
+        margin: auto;
+        margin-top: $separation-margin;
+        width: 80%;
+
+    }
+
+    .aboutMeHeader {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .avatarImg {
+        width: 150px;
+        height: 150px;
+    }
+
+    .aboutMeInfoWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 50px;
+        text-align: left;
+        gap: 30px;
+    }
+
+    .aboutMeP {
+        font-size: 30px;
+        width: 50%;
+    }
+
+    .aboutMeP2{
+        font-size: 30px;
+        width: 50%;
+    }
+
 }
 
 
 
+
+
+
+
 footer {
-    position: fixed;
+    margin-top: $separation-margin;
     width: 100%;
     height: auto;
-    border: 3px solid white;
     .footerInformation {
-        gap: -10px;
         text-align: center;
         color: white;
     }   

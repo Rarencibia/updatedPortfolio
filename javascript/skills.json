@@ -1,6 +1,23 @@
 {
     "skills": [
-        {"name": "atom", "img": "../images/skillsLogos/atom"}
+        {"name": "javascript", "img": "../images/skillLogos/javascript.png"},
+        {"name": "css", "img": "../images/skillLogos/css.png"},
+        {"name": "jquery", "img": "../images/skillLogos/jquery.png"},
+        {"name": "nodejs", "img": "../images/skillLogos/nodejs.png"},
+        {"name": "python", "img": "../images/skillLogos/python.webp"},
+        {"name": "sass", "img": "../images/skillLogos/sass.png"},
+        {"name": "express", "img": "../images/skillLogos/express.png"},
+        {"name": "html", "img": "../images/skillLogos/html.png"},
+        {"name": "bootstrap", "img": "../images/skillLogos/bootstrap.png"},
+        {"name": "pug", "img": "../images/skillLogos/pug.png"},
+        {"name": "django", "img": "../images/skillLogos/django.png"},
+        {"name": "aws", "img": "../images/skillLogos/aws.png"},
+        {"name": "github", "img": "../images/skillLogos/github.png"},
+        {"name": "powershell", "img": "../images/skillLogos/powershell.jpg"},
+        {"name": "ubuntu", "img": "../images/skillLogos/ubuntu.png"},
+        {"name": "wordpress", "img": "../images/skillLogos/wordpress.png"},
+        {"name": "atom", "img": "../images/skillLogos/atom.png"},
+        {"name": "vscode", "img": "../images/skillLogos/vscode.png"}
 
 
 
