@@ -1,4 +1,5 @@
 body {
+  font-family: Georgia, "Times New Roman", Times, serif;
   background-color: black;
   color: white;
   margin: 0;
@@ -15,7 +16,8 @@ body .mainImage {
 }
 
 header nav {
-  width: 95%;
+  width: 30%;
+  margin-left: 65%;
 }
 header ul {
   display: flex;
@@ -24,14 +26,17 @@ header ul {
   gap: 50px;
 }
 header li {
+  margin: auto;
   font-size: 30px;
   font-weight: 900;
   list-style: none;
 }
 header li:hover {
   background: black;
-  box-shadow: 3px 3px 20px white;
+  text-shadow: 3px 3px 10px blue;
   border-radius: 10%;
+  text-decoration: overline;
+  text-decoration-color: blue;
 }
 header a {
   text-decoration: none;
@@ -149,6 +154,7 @@ header .hiddenElement {
   margin: auto;
   text-align: center;
   width: 70%;
+  line-height: 40px;
   font-size: 22px;
   font-weight: 600;
 }
@@ -219,7 +225,7 @@ main .projectsDisplayWrapper {
   justify-content: center;
   align-items: center;
   place-items: center;
-  grid-gap: 20px;
+  grid-gap: 50px;
   padding: 30px;
   border-radius: 1%;
   background: white;
@@ -269,6 +275,9 @@ main a {
 main .technologiesSection {
   margin-top: 300px;
 }
+main .skillsInformationWrapper {
+  background: gray;
+}
 main .skillsList {
   text-align: center;
 }
@@ -284,8 +293,8 @@ main .skillsWrapper {
   padding: 20px;
 }
 main .skillsImg {
-  width: 200px;
-  height: 180px;
+  width: 120px;
+  height: 80px;
   object-fit: contain;
 }
 main .skillsName {
@@ -322,9 +331,36 @@ main .aboutMeP2 {
   font-size: 30px;
   width: 50%;
 }
+main .contactWrapper {
+  color: black;
+  margin-top: 300px;
+  width: 80%;
+  margin: auto;
+  height: 200px;
+  text-align: center;
+  padding: 50px;
+}
+main .contactFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  z-index: 1;
+  flex-direction: row-reverse;
+}
+main .contactBackground {
+  position: absolute;
+  width: 80%;
+  object-fit: cover;
+  z-index: -1;
+}
+main .contactBackgroundImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
 
 footer {
-  margin-top: 300px;
   width: 100%;
   height: auto;
 }

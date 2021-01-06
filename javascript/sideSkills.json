@@ -1,0 +1,15 @@
+{
+    "sideSkills":[
+        {"name": "ES6"},
+        {"name": "CSS-Grid/Flexbox"},
+        {"name": "JSON"},
+        {"name": "RESTFUL API"},
+        {"name": "Chrome/Firefox Developer Tools"},
+        {"name": "Postman"},
+        {"name": "Vagrant"},
+        {"name": "Leaflet.js"},
+        {"name": "CSS Animation Library"},
+        {"name": "Async JS"}
+    ]   
+    
+}

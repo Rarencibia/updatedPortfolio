@@ -11,14 +11,13 @@
 <body>
     <img class="mainImage" src="images/codingImage.jpeg" alt="">
 
-    <header>
+    <header id="topLink">
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#projectsLink">Projects</a></li>
+                <li><a href="#skillsLink">Skills</a></li>
+                <li><a href="#aboutLink">About</a></li>
+                <li><a href="#contactLink">Contact</a></li>
             </ul>
         </nav>
         <div class="logoHeader">
@@ -32,6 +31,8 @@
         </div>
     </header>
 
+
+    <!--Side bar for social media links.-->
     <article>
         <div class="mediaAndIntro">
 
@@ -49,63 +50,81 @@
         </div>
     </article>
 
-
+    <!--Start of the main content-->
     <main>
-        <section>
+        <section id="projectsLink" data-aos="fade-right">
             <div class="projectsDisplayWrapper" >
                 
+                <div class="projectShowcase"><a href="https://mighty-springs-49026.herokuapp.com/"><img class="screenshotImg" src="images/spoonmoose.png" alt="Doesthislooknormal"></a>
+                    <a href="https://github.com/Rarencibia/DoesThisLookNormal"><button class="githubCode" type="button">Github Code</button></a>
+                </div>
                 <div class="projectShowcase"></div>
-                <div class="projectShowcase"></div>
-                <div class="projectShowcase"></div>
+                <div class="projectShowcase"><a href="https://serene-lalande-8bd1ec.netlify.app/"><img class ="screenshotImg" src="images/levelUp.png" alt="LevelUpCollectables"></a>
+                    <a href="https://github.com/Rarencibia/TPosserLevelUp"><button class="githubCode" type="button">Github Code</button></a>
+                </div>
                 <div class="projectShowcase"><a href="https://confident-haibt-690550.netlify.app/"><img class ="screenshotImg" src="images/Screenshot 2.png" alt="Band Website Template" title="Band Website Template"></a>
-                    <a href="#"><button class="githubCode" type="button">Github Code</button></a> 
+                    <a href="https://github.com/Rarencibia/BandWebsite/tree/master/myapp"><button class="githubCode" type="button">Github Code</button></a> 
                 </div>
                 
                 <div class="projectShowcase"><a href="https://tender-perlman-f34510.netlify.app/"><img class ="screenshotImg" src="images/blogTemplate.png" alt="Blog Template" title="Blog Template"></a>
-                    <a href="#"><button class="githubCode" type="button">Github Code</button></a>
+                    <a href="https://github.com/Rarencibia/blogTemplate"><button class="githubCode" type="button">Github Code</button></a>
                 </div>
                 
                 <div class="projectShowcase"><a href="https://modest-hamilton-992def.netlify.app/"><img class ="screenshotImg" src="images/Screenshot 4.png" alt="Diner Website Template" title="Diner Website Template"></a>
-                    <a href="#"><button class="githubCode" type="button">Github Code</button></a>
+                    <a href="https://github.com/Rarencibia/DinerTemplate"><button class="githubCode" type="button">Github Code</button></a>
                 </div>
             </div>
         </section>
 
-        <section>
+        <section id="skillsLink">
             <div class="technologiesSection">
                 <div class="skillsList">
-                    <h1>Commonly Used Technologies</h1>
+                    <h1>Skillset Technologies</h1>
                 </div>
-                <div id="skillsWrapper" class="skillsWrapper">
-                    
+                <div class="skillsInformationWrapper">
+                    <div id="skillsWrapper" class="skillsWrapper" data-aos="zoom-in"></div>
+                    <div id="sideSkillsWrapper" class="sideSkillsWrapper"></div>
                 </div>
             </div>
         </section>
 
 
-        <section>
+        <section id="aboutLink">
             <div class="aboutMeWrapper">
                 <div class="aboutMeHeader">
-                    <img class="avatarImg" src="images/avatar.png" alt="My avatar" title="Avatar Selfie">
+                    <img class="avatarImg" src="images/avatar.png" alt="My avatar" title="Avatar Selfie" data-aos="flip-right">
                     <h1>A Little About Me</h1>
                 </div>
-                <div class="aboutMeInfoWrapper">
+                <div class="aboutMeInfoWrapper" data-aos="flip-up">
                     <p class="aboutMeP">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis est quo, necessitatibus, nam illo reiciendis mollitia ut earum culpa expedita possimus atque sequi! Ad dicta aperiam maxime maiores consequuntur explicabo temporibus asperiores dolorem ratione, ipsum, vitae iure. Eveniet, harum eos. Ipsa velit corporis quisquam reiciendis harum. Incidunt dicta repellat ad nulla nostrum enim at ipsa ratione earum, a qui laborum veniam natus, debitis quaerat animi distinctio, facilis explicabo. Explicabo, unde?                        
-                        <!-- { <br>
-                            &emsp;"aboutMeInfo": [ <br>
-                            &emsp;&emsp;{"Name": "Robert Arencibia", <br>
-                            &emsp;&emsp;"Occupation": "Full Stack Web Development", <br>
-                            &emsp;&emsp;"": ["Websites", ""] <br>
-                            
-                            &emsp;}] <br>
-                        } -->
+                        Hello! My name is Robert Arencibia, i'm a passionate Web Developer who comes from the Toms River area in New Jersey. I love working with people to watch their ideas comes to life.
                     </p>
-                    <p class="aboutMeP2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, magni. Quas labore blanditiis fugit voluptatum quos harum nam aperiam quae aut minus consequuntur ducimus modi dolorum quo quisquam accusantium itaque voluptates illo tempore at molestiae hic, officiis, sit magnam. Corrupti sequi nulla voluptates architecto fuga facere consequatur excepturi cupiditate deserunt quasi, laborum dolores possimus sunt earum at. Eligendi, itaque nam.</p>
+                    <p class="aboutMeP2">
+                        My endurance to discover new innovations and utilize the skills I know to be a part of the present/future of technology excites me to no end. I cannot wait to see what we create together.
+                    </p>
                 </div>
             </div>
         </section>
 
+
+        <section id="contactLink">
+            <div class="contactWrapper">
+                <div class="contactBackground">
+                    <img class="contactBackgroundImage" src="images/contactBackground.jpeg" alt="">
+                </div>
+                <h1>Contact Information</h1>
+                <hgroup class="contactFlex">
+                    <div class="leftContact">
+                        
+                        <h3>Phone Number: 732-703-0082</h3>
+                    </div>
+                    <div class="rightContact">
+                        <h3>Social Media: <a href="https://www.linkedin.com/in/robert-arencibia-95ba851b4/">LinkedIn</a></h3>
+                        <h3>Email: <a href="mailto:Rarencibia@comcast.net">Rarencibia@comcast.net</a></h3>
+                    </div>
+                </hgroup>
+            </div>
+        </section>
     </main>
 
 
@@ -116,8 +135,10 @@
             <div class="footerInformation">
                 <h4>Robert Arencibia - Full Stack Web Developer</h4>
                 <h5>Let's bring your idea's to life</h5>
+                <h5><a href="#topLink">Back To Top</a></h5>
             </div>
         </hgroup>
+
     </footer>
 
     <script src="javascript/name.js"></script>

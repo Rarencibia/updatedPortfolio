@@ -6,6 +6,7 @@ $border: 3px solid white;
 $special-font-color: rgb(253, 212, 176);
 
 body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: black;
     color: white;
     margin: 0;
@@ -24,7 +25,8 @@ body {
 header {
 
     nav {
-        width: 95%;
+        width: 30%;
+        margin-left: 65%;
     }
     ul {
         display: flex;
@@ -34,13 +36,16 @@ header {
     }
 
     li {
+        margin: auto;
         font-size: 30px;
         font-weight: 900;
         list-style: none;
         &:hover {
             background: black;
-            box-shadow: 3px 3px 20px white;
+            text-shadow: 3px 3px 10px blue;
             border-radius: 10%;
+            text-decoration: overline;
+            text-decoration-color: blue;
 
 
         }
@@ -142,6 +147,7 @@ header {
         margin: auto;
         text-align: center;
         width: 70%;
+        line-height: 40px;
         font-size: 22px;
         font-weight: 600;
     }
@@ -209,7 +215,7 @@ main {
         justify-content: center;
         align-items: center;
         place-items: center;
-        grid-gap: 20px;
+        grid-gap: 50px;
         padding: 30px;
         border-radius: 1%;
         background: white;
@@ -267,6 +273,9 @@ main {
         margin-top: $separation-margin;
     }
 
+    .skillsInformationWrapper {
+        background: gray;
+    }
     .skillsList {
 
         text-align: center;
@@ -286,8 +295,8 @@ main {
     }
 
     .skillsImg {
-        width: 200px;
-        height: 180px;
+        width: 120px;
+        height: 80px;
         object-fit: contain;
     }
 
@@ -334,6 +343,38 @@ main {
         width: 50%;
     }
 
+    .contactWrapper {
+        color: black;
+        margin-top: $separation-margin;
+        width: 80%;
+        margin: auto;
+        height: 200px;
+        text-align: center;
+        padding: 50px;
+    }
+
+    .contactFlex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+        z-index: 1;
+        flex-direction: row-reverse;
+    }
+
+    .contactBackground {
+        position: absolute;
+        width: 80%;
+        object-fit: cover;
+        z-index: -1;
+    }
+    .contactBackgroundImage {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+
 }
 
 
@@ -342,8 +383,8 @@ main {
 
 
 
+
 footer {
-    margin-top: $separation-margin;
     width: 100%;
     height: auto;
     .footerInformation {

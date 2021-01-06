@@ -1,9 +1,11 @@
+let skillsWrapper = document.getElementById("skillsWrapper");
+let sideSkillsWrapper = document.getElementById("sideSkillsWrapper");
+
 async function getData(){
-    let getJson = await fetch("../javascript/skills.json");
-    let data = await getJson.json();
+    const getJson = await fetch("../javascript/skills.json");
+    const data = await getJson.json();
 
 
-    let skillsWrapper = document.getElementById("skillsWrapper");
 
     for(let i = 0; i < data.skills.length; i++){
         let createContainer = document.createElement("div");
@@ -23,8 +25,30 @@ async function getData(){
         createContainer.appendChild(addImage);
         createContainer.appendChild(writeName);
 
+        
     };
+
+    
+
+};
+
+async function getSideSkills(){
+    const getJson = await fetch("../javascript/sideSkills.json");
+    const data = await getJson.json();
+
+    for(let i = 0; i < data.sideSkills.length; i++){
+        let createContainer = document.createElement("div");
+        createContainer.setAttribute("id", "sideSkillsContainer");
+
+        let sideSkills = document.createElement("h3");
+        sideSkills.setAttribute("id", data.sideSkills[i].name);
+        sideSkills.innerText = data.sideSkills[i].name;
+
+        sideSkillsWrapper.appendChild(createContainer);
+        createContainer.appendChild(sideSkills);
+    }
 
 };
 
 getData();
+// getSideSkills();
