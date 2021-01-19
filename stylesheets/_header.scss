@@ -1,0 +1,111 @@
+header {
+    nav {
+        position: fixed;
+        width: 30%;
+        margin-left: 65%;
+        z-index: 1;
+    }
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 50px;
+    }
+
+    li {
+        margin: auto;
+        font-size: 30px;
+        font-weight: 900;
+        list-style: none;
+        &:hover {
+            background: black;
+            text-shadow: 3px 3px 10px blue;
+            border-radius: 10%;
+            text-decoration: overline;
+            text-decoration-color: blue;
+
+
+        }
+    }
+    a{
+        text-decoration: none;
+        color: white;
+
+    }
+
+    .logoHeader {
+        width: 100%;
+        min-height: 10vh;
+        max-height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .logoWrapper {
+        margin-top: 35px!important;
+
+        z-index: 1;
+        width: 30%;
+        text-align: center;
+        height: auto;
+        margin: auto;
+
+
+    }
+    .logo{
+
+        color: $default-font-color;
+        font-weight: bold;
+        font-size: 70px;
+        margin: auto;
+        text-align: center;
+        min-width: 80px;
+        max-width: 80px;
+        min-height: 80px;
+        max-height: 80px;
+        border-radius: 60%;
+        border: 3px solid white;
+        @include logoAnimation();
+        @include logoAnimationDuration();
+
+    }
+    #logoA {
+        text-shadow: 3px 3px 10px blue;
+        border: double white 3px;
+        box-shadow: 3px 3px 10px white;
+
+
+    }
+
+    .name {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        
+
+    }
+    .letterContainer {
+        width: 60px;
+        text-align: center;
+        font-size: 50px;
+        color: white;
+
+        transition-timing-function: ease-in-out;
+
+    }
+
+    #A,#R,#E,#N,#C,#I,#B,#I{
+        @include keyframeAnimation(flip);
+        @include keyframeDuration(flip);
+    }
+
+    .hiddenElement {
+        width: 100%;
+    }
+
+}
+

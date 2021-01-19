@@ -1,0 +1,36 @@
+.technologiesSection {
+    margin-top: $separation-margin;
+
+    .skillsInformationWrapper {
+        background: gray;
+    }
+    .skillsList {
+
+        text-align: center;
+    }
+
+
+    .skillsWrapper {
+        display: grid;
+        grid-template-columns: repeat( auto-fill, minmax(350px, 5fr));
+        justify-content: center;
+        align-items: center;
+        place-items: center;
+        gap: 20px;
+        width: 100%;
+        background: gray;
+        padding: 20px;
+    }
+
+    .skillsImg {
+        width: 120px;
+        height: 80px;
+        object-fit: contain;
+    }
+
+    .skillsName{
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+}

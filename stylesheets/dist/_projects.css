@@ -1,0 +1,60 @@
+.myProjectsHeader {
+  color: white;
+  text-align: center;
+  font-weight: 900;
+}
+.myProjectsHeader .projectsDisplayWrapper {
+  width: 70%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 3fr));
+  justify-content: center;
+  align-items: center;
+  place-items: center;
+  grid-gap: 50px;
+  padding: 30px;
+  border-radius: 1%;
+  background: white;
+  margin: auto;
+  margin-bottom: 100px;
+  /*Remove me after done*/
+  background-color: black;
+}
+.myProjectsHeader .projectShowcase {
+  text-align: center;
+  border: 3px solid white;
+  width: 400px;
+  height: 20vh;
+  box-shadow: 1px 1px 20px white;
+}
+.myProjectsHeader .screenshotImg {
+  width: 100%;
+  height: 100%;
+}
+.myProjectsHeader .screenshotImg:hover {
+  transition: ease-in-out;
+  transition-duration: 0.2s;
+  opacity: 0.3;
+}
+.myProjectsHeader .githubCode {
+  width: 120px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  color: white;
+  border-radius: 10%;
+  background: black;
+  border: 1px solid white;
+}
+.myProjectsHeader .githubCode:hover {
+  cursor: pointer;
+  transition: ease-out;
+  transition-duration: 0.2s;
+  background-color: gray;
+  color: #fdd4b0;
+}
+.myProjectsHeader a {
+  text-decoration: none;
+}

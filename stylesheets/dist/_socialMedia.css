@@ -1,0 +1,68 @@
+.mediaAndIntro {
+  display: flex;
+  margin-top: 300px;
+  width: 100%;
+  height: auto;
+  align-items: center;
+}
+.mediaAndIntro .miniIntro {
+  margin: auto;
+}
+.mediaAndIntro .miniIntroP {
+  margin: auto;
+  text-align: center;
+  width: 70%;
+  line-height: 40px;
+  font-size: 22px;
+  font-weight: 600;
+}
+.mediaAndIntro .emphasis {
+  color: #fdd4b0;
+  font-size: 30px;
+  font-weight: 900;
+}
+.mediaAndIntro .socialMediaLinksWrapper {
+  margin-top: 15%;
+  min-width: 80px;
+  max-width: 80px;
+  min-height: 230px;
+  max-height: 100px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  background-color: gray;
+  opacity: 0.7;
+  border-radius: 1%;
+}
+.mediaAndIntro .socialMediaLink {
+  width: 50px;
+  height: 50px;
+  box-shadow: 3px 3px 10px white;
+}
+.mediaAndIntro a {
+  text-align: center;
+  min-width: 80%;
+  max-width: 80%;
+  min-height: 80%;
+  max-width: 80%;
+  margin: auto;
+}
+.mediaAndIntro a:hover {
+  animation-name: mediaFlip;
+  animation-delay: 0s;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+@keyframes mediaFlip {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}

@@ -1,0 +1,65 @@
+.mediaAndIntro {
+    display: flex;
+    margin-top: $separation-margin;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    .miniIntro {
+        margin: auto;
+    }
+    .miniIntroP {
+        margin: auto;
+        text-align: center;
+        width: 70%;
+        line-height: 40px;
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    .emphasis {
+        color: $special-font-color;
+        font-size: 30px;
+        font-weight: 900;
+
+    }
+
+
+
+
+    .socialMediaLinksWrapper {
+        margin-top: 15%;
+        min-width: 80px;
+        max-width: 80px;
+        min-height: 230px;
+        max-height: 100px;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        background-color: gray;
+        opacity: .70;
+        border-radius: 1%;
+    }
+        .socialMediaLink {
+            width: 50px;
+            height: 50px;
+            box-shadow: 3px 3px 10px white;
+    
+        }
+            a {
+                text-align: center;
+                min-width: 80%;
+                max-width: 80%;
+                min-height: 80%;
+                max-width: 80%;
+                margin: auto;
+    
+                &:hover {
+                    @include keyframeAnimation(mediaFlip);
+        
+                    @include keyframeDuration(mediaFlip);
+                }
+            }
+    
+}

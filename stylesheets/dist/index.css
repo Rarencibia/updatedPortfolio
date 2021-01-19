@@ -16,8 +16,10 @@ body .mainImage {
 }
 
 header nav {
+  position: fixed;
   width: 30%;
   margin-left: 65%;
+  z-index: 1;
 }
 header ul {
   display: flex;
@@ -264,24 +266,25 @@ main .githubCode {
 }
 main .githubCode:hover {
   cursor: pointer;
-  transition: ease-in-out;
-  transition-duration: 0.5s;
+  transition: ease-out;
+  transition-duration: 0.2s;
   background-color: gray;
   color: #fdd4b0;
 }
 main a {
   text-decoration: none;
 }
-main .technologiesSection {
+
+.technologiesSection {
   margin-top: 300px;
 }
-main .skillsInformationWrapper {
+.technologiesSection .skillsInformationWrapper {
   background: gray;
 }
-main .skillsList {
+.technologiesSection .skillsList {
   text-align: center;
 }
-main .skillsWrapper {
+.technologiesSection .skillsWrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 5fr));
   justify-content: center;
@@ -292,30 +295,31 @@ main .skillsWrapper {
   background: gray;
   padding: 20px;
 }
-main .skillsImg {
+.technologiesSection .skillsImg {
   width: 120px;
   height: 80px;
   object-fit: contain;
 }
-main .skillsName {
+.technologiesSection .skillsName {
   text-align: center;
   text-transform: uppercase;
 }
-main .aboutMeWrapper {
+
+.aboutMeWrapper {
   margin: auto;
   margin-top: 300px;
   width: 80%;
 }
-main .aboutMeHeader {
+.aboutMeWrapper .aboutMeHeader {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-main .avatarImg {
+.aboutMeWrapper .avatarImg {
   width: 150px;
   height: 150px;
 }
-main .aboutMeInfoWrapper {
+.aboutMeWrapper .aboutMeInfoWrapper {
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -323,15 +327,16 @@ main .aboutMeInfoWrapper {
   text-align: left;
   gap: 30px;
 }
-main .aboutMeP {
+.aboutMeWrapper .aboutMeP {
   font-size: 30px;
   width: 50%;
 }
-main .aboutMeP2 {
+.aboutMeWrapper .aboutMeP2 {
   font-size: 30px;
   width: 50%;
 }
-main .contactWrapper {
+
+.contactWrapper {
   color: black;
   margin-top: 300px;
   width: 80%;
@@ -339,8 +344,14 @@ main .contactWrapper {
   height: 200px;
   text-align: center;
   padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 25px;
+  font-weight: 900;
 }
-main .contactFlex {
+.contactWrapper .contactFlex {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -348,16 +359,28 @@ main .contactFlex {
   z-index: 1;
   flex-direction: row-reverse;
 }
-main .contactBackground {
+.contactWrapper .contactBackground {
   position: absolute;
   width: 80%;
   object-fit: cover;
   z-index: -1;
 }
-main .contactBackgroundImage {
+.contactWrapper .contactBackgroundImage {
   width: 100%;
   height: 200px;
   object-fit: cover;
+}
+.contactWrapper .contactLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contactWrapper .contactLinks:hover {
+  opacity: 0.6;
+}
+.contactWrapper .contactLogo {
+  width: 50px;
+  height: 38px;
 }
 
 footer {

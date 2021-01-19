@@ -1,0 +1,8 @@
+footer {
+  width: 100%;
+  height: auto;
+}
+footer .footerInformation {
+  text-align: center;
+  color: white;
+}

@@ -1,0 +1,35 @@
+.aboutMeWrapper {
+    margin: auto;
+    margin-top: $separation-margin;
+    width: 80%;
+
+    .aboutMeHeader {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .avatarImg {
+        width: 150px;
+        height: 150px;
+    }
+
+    .aboutMeInfoWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 50px;
+        text-align: left;
+        gap: 30px;
+    }
+
+    .aboutMeP {
+        font-size: 30px;
+        width: 50%;
+    }
+
+    .aboutMeP2{
+        font-size: 30px;
+        width: 50%;
+    }
+}
