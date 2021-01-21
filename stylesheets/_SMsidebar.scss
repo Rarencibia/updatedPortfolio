@@ -9,7 +9,7 @@
     }
     .miniIntroP {
         margin: auto;
-        text-align: center;
+        text-align: left;
         width: 70%;
         line-height: 40px;
         font-size: 22px;
@@ -40,6 +40,7 @@
         background-color: gray;
         opacity: .70;
         border-radius: 1%;
+        border: 3px solid white;
     }
         .socialMediaLink {
             width: 50px;
@@ -62,4 +63,18 @@
                 }
             }
     
+}
+
+@media screen and (max-width: 880px){
+    .mediaAndIntro{
+        flex-direction: column!important;
+
+        .socialMediaLinksWrapper{
+            padding: 15px;
+            transform: rotate(90deg);
+        }
+        .socialMediaLink {
+            transform: rotate(-90deg);
+        }
+    }
 }

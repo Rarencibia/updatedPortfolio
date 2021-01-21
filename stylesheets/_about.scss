@@ -28,8 +28,21 @@
         width: 50%;
     }
 
-    .aboutMeP2{
-        font-size: 30px;
-        width: 50%;
+}
+
+@media screen and (max-width: 1110px) {
+    .aboutMeWrapper {
+        width: 100%;
+        padding: 0;
+        .aboutMeInfoWrapper {
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding: 0px;
+            margin: auto;
+        }
+        .aboutMeP {
+            width: 80%;
+        }
     }
+
 }

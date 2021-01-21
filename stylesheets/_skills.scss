@@ -34,3 +34,9 @@
     }
 
 }
+
+@media screen and (max-width: 720px) {
+    .skillsWrapper {
+        grid-template-columns: repeat( auto-fill, minmax(150px, 2fr))!important;
+    }
+}

@@ -1,12 +1,11 @@
 
 .contactWrapper {
     color: black;
-    margin-top: $separation-margin;
+    margin-top: $separation-margin!important;
     width: 80%;
     margin: auto;
     height: 200px;
     text-align: center;
-    padding: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -53,3 +52,20 @@
 }
 
 
+@media screen and (max-width: 960px) {
+    .contactFlex {
+        flex-direction: column!important;
+        gap: 0px!important;
+        margin: 0!important;
+    }
+
+    .contactBackgroundImage {
+        height: 300px!important;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .contactBackground {
+        width: 100%!important;
+    }
+}

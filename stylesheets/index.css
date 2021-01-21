@@ -1,8 +1,10 @@
 body {
+  width: 100% !important;
+  font-family: Georgia, "Times New Roman", Times, serif;
   background-color: black;
+  color: white;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
 }
 
 body .mainImage {
@@ -13,6 +15,47 @@ body .mainImage {
   opacity: .80;
   position: absolute;
   z-index: -1;
+}
+
+header nav {
+  position: fixed;
+  width: 30%;
+  margin-left: 65%;
+  z-index: 1;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 50px;
+}
+
+header li {
+  margin: auto;
+  font-size: 30px;
+  font-weight: 900;
+  list-style: none;
+}
+
+header li:hover {
+  background: black;
+  text-shadow: 3px 3px 10px blue;
+  border-radius: 10%;
+  text-decoration: overline;
+  -webkit-text-decoration-color: blue;
+          text-decoration-color: blue;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
 }
 
 header .logoHeader {
@@ -144,7 +187,7 @@ header .letterContainer {
           transition-timing-function: ease-in-out;
 }
 
-header #R, header #E, header #N, header #C, header #I, header #B, header #I, header #A {
+header #A, header #R, header #E, header #N, header #C, header #I, header #B, header #I {
   -webkit-animation-name: flip;
           animation-name: flip;
   -webkit-animation-delay: 0s;
@@ -189,12 +232,44 @@ header .hiddenElement {
   width: 100%;
 }
 
-.socialMediaLinksWrapper {
+.mediaAndIntro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 300px;
+  width: 100%;
+  height: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mediaAndIntro .miniIntro {
+  margin: auto;
+}
+
+.mediaAndIntro .miniIntroP {
+  margin: auto;
+  text-align: left;
+  width: 70%;
+  line-height: 40px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.mediaAndIntro .emphasis {
+  color: #fdd4b0;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.mediaAndIntro .socialMediaLinksWrapper {
   margin-top: 15%;
-  min-width: 8%;
-  max-width: 8%;
-  min-height: 50%;
-  max-height: 50%;
+  min-width: 80px;
+  max-width: 80px;
+  min-height: 230px;
+  max-height: 100px;
+  padding: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -206,18 +281,20 @@ header .hiddenElement {
       -ms-flex-align: center;
           align-items: center;
   gap: 30px;
-  background-color: white;
-  opacity: .30;
+  background-color: gray;
+  opacity: .70;
+  border-radius: 1%;
+  border: 3px solid white;
 }
 
-.socialMediaLinksWrapper .socialMediaLink {
+.mediaAndIntro .socialMediaLink {
   width: 50px;
   height: 50px;
   -webkit-box-shadow: 3px 3px 10px white;
           box-shadow: 3px 3px 10px white;
 }
 
-.socialMediaLinksWrapper a {
+.mediaAndIntro a {
   text-align: center;
   min-width: 80%;
   max-width: 80%;
@@ -226,7 +303,7 @@ header .hiddenElement {
   margin: auto;
 }
 
-.socialMediaLinksWrapper a:hover {
+.mediaAndIntro a:hover {
   -webkit-animation-name: mediaFlip;
           animation-name: mediaFlip;
   -webkit-animation-delay: 0s;
@@ -265,5 +342,331 @@ header .hiddenElement {
     -webkit-transform: rotateY(0deg);
             transform: rotateY(0deg);
   }
+}
+
+@media screen and (max-width: 880px) {
+  .mediaAndIntro {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .mediaAndIntro .socialMediaLinksWrapper {
+    padding: 15px;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  .mediaAndIntro .socialMediaLink {
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
+}
+
+main {
+  width: 100% !important;
+  margin-top: 150px;
+}
+
+main .myProjectsHeader {
+  color: white;
+  font-weight: 900;
+}
+
+main .projectsDisplayWrapper {
+  margin: auto !important;
+  width: 70%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(350px, 3fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(350px, 3fr));
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  place-items: center;
+  grid-gap: 50px;
+  border-radius: 1%;
+  background: white;
+  margin: auto;
+  background-color: black;
+}
+
+main .projectShowcase {
+  text-align: center;
+  border: 3px solid white;
+  width: 400px;
+  height: 25vh;
+  -webkit-box-shadow: 1px 1px 20px white;
+          box-shadow: 1px 1px 20px white;
+}
+
+main .screenshotImg {
+  width: 100%;
+  height: 100%;
+}
+
+main .screenshotImg:hover {
+  -webkit-transition: ease-in-out;
+  transition: ease-in-out;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+  opacity: .30;
+}
+
+main .githubCode {
+  width: 120px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  color: white;
+  border-radius: 10%;
+  background: black;
+  border: 1px solid white;
+}
+
+main .githubCode:hover {
+  cursor: pointer;
+  -webkit-transition: ease-out;
+  transition: ease-out;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+  background-color: gray;
+  color: #fdd4b0;
+}
+
+main a {
+  text-decoration: none;
+}
+
+.technologiesSection {
+  margin-top: 300px;
+}
+
+.technologiesSection .skillsInformationWrapper {
+  background: gray;
+}
+
+.technologiesSection .skillsList {
+  text-align: center;
+}
+
+.technologiesSection .skillsWrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(350px, 5fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(350px, 5fr));
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  place-items: center;
+  gap: 20px;
+  width: 100%;
+  background: gray;
+  padding: 20px;
+}
+
+.technologiesSection .skillsImg {
+  width: 120px;
+  height: 80px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.technologiesSection .skillsName {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 720px) {
+  .skillsWrapper {
+    -ms-grid-columns: (minmax(150px, 2fr))[auto-fill] !important;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 2fr)) !important;
+  }
+}
+
+.aboutMeWrapper {
+  margin: auto;
+  margin-top: 300px;
+  width: 80%;
+}
+
+.aboutMeWrapper .aboutMeHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.aboutMeWrapper .avatarImg {
+  width: 150px;
+  height: 150px;
+}
+
+.aboutMeWrapper .aboutMeInfoWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 50px;
+  text-align: left;
+  gap: 30px;
+}
+
+.aboutMeWrapper .aboutMeP {
+  font-size: 30px;
+  width: 50%;
+}
+
+@media screen and (max-width: 1110px) {
+  .aboutMeWrapper {
+    width: 100%;
+    padding: 0;
+  }
+  .aboutMeWrapper .aboutMeInfoWrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 0px;
+    margin: auto;
+  }
+  .aboutMeWrapper .aboutMeP {
+    width: 80%;
+  }
+}
+
+.contactWrapper {
+  color: black;
+  margin-top: 300px !important;
+  width: 80%;
+  margin: auto;
+  height: 200px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.contactWrapper .contactFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 100px;
+  z-index: 1;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.contactWrapper .contactBackground {
+  position: absolute;
+  width: 80%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+}
+
+.contactWrapper .contactBackgroundImage {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.contactWrapper .contactLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contactWrapper .contactLinks:hover {
+  opacity: .60;
+}
+
+.contactWrapper .contactLogo {
+  width: 50px;
+  height: 38px;
+}
+
+@media screen and (max-width: 960px) {
+  .contactFlex {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    gap: 0px !important;
+    margin: 0 !important;
+  }
+  .contactBackgroundImage {
+    height: 300px !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .contactBackground {
+    width: 100% !important;
+  }
+}
+
+footer {
+  margin-top: 100px;
+  width: 100%;
+  height: auto;
+}
+
+footer .footerInformation {
+  text-align: center;
+  color: white;
 }
 /*# sourceMappingURL=index.css.map */

@@ -1,10 +1,10 @@
 body {
+  width: 100% !important;
   font-family: Georgia, "Times New Roman", Times, serif;
   background-color: black;
   color: white;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
 }
 body .mainImage {
   width: 100%;
@@ -154,7 +154,7 @@ header .hiddenElement {
 }
 .mediaAndIntro .miniIntroP {
   margin: auto;
-  text-align: center;
+  text-align: left;
   width: 70%;
   line-height: 40px;
   font-size: 22px;
@@ -179,6 +179,7 @@ header .hiddenElement {
   background-color: gray;
   opacity: 0.7;
   border-radius: 1%;
+  border: 3px solid white;
 }
 .mediaAndIntro .socialMediaLink {
   width: 50px;
@@ -211,15 +212,28 @@ header .hiddenElement {
   }
 }
 
+@media screen and (max-width: 880px) {
+  .mediaAndIntro {
+    flex-direction: column !important;
+  }
+  .mediaAndIntro .socialMediaLinksWrapper {
+    padding: 15px;
+    transform: rotate(90deg);
+  }
+  .mediaAndIntro .socialMediaLink {
+    transform: rotate(-90deg);
+  }
+}
 main {
-  width: 100%;
+  width: 100% !important;
+  margin-top: 150px;
 }
 main .myProjectsHeader {
   color: white;
-  text-align: center;
   font-weight: 900;
 }
 main .projectsDisplayWrapper {
+  margin: auto !important;
   width: 70%;
   height: auto;
   display: grid;
@@ -228,19 +242,16 @@ main .projectsDisplayWrapper {
   align-items: center;
   place-items: center;
   grid-gap: 50px;
-  padding: 30px;
   border-radius: 1%;
   background: white;
   margin: auto;
-  margin-bottom: 100px;
-  /*Remove me after done*/
   background-color: black;
 }
 main .projectShowcase {
   text-align: center;
   border: 3px solid white;
   width: 400px;
-  height: 20vh;
+  height: 25vh;
   box-shadow: 1px 1px 20px white;
 }
 main .screenshotImg {
@@ -286,7 +297,7 @@ main a {
 }
 .technologiesSection .skillsWrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 5fr));
+  grid-template-columns: repeat(auto-fill, minmax(350px, 5fr));
   justify-content: center;
   align-items: center;
   place-items: center;
@@ -305,6 +316,11 @@ main a {
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 720px) {
+  .skillsWrapper {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 2fr)) !important;
+  }
+}
 .aboutMeWrapper {
   margin: auto;
   margin-top: 300px;
@@ -331,19 +347,29 @@ main a {
   font-size: 30px;
   width: 50%;
 }
-.aboutMeWrapper .aboutMeP2 {
-  font-size: 30px;
-  width: 50%;
-}
 
+@media screen and (max-width: 1110px) {
+  .aboutMeWrapper {
+    width: 100%;
+    padding: 0;
+  }
+  .aboutMeWrapper .aboutMeInfoWrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0px;
+    margin: auto;
+  }
+  .aboutMeWrapper .aboutMeP {
+    width: 80%;
+  }
+}
 .contactWrapper {
   color: black;
-  margin-top: 300px;
+  margin-top: 300px !important;
   width: 80%;
   margin: auto;
   height: 200px;
   text-align: center;
-  padding: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -383,7 +409,24 @@ main a {
   height: 38px;
 }
 
+@media screen and (max-width: 960px) {
+  .contactFlex {
+    flex-direction: column !important;
+    gap: 0px !important;
+    margin: 0 !important;
+  }
+
+  .contactBackgroundImage {
+    height: 300px !important;
+  }
+}
+@media screen and (max-width: 500px) {
+  .contactBackground {
+    width: 100% !important;
+  }
+}
 footer {
+  margin-top: 100px;
   width: 100%;
   height: auto;
 }

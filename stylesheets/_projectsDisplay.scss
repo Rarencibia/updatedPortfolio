@@ -1,11 +1,14 @@
 main {
-    width: 100%;
+    width: 100%!important;
+    margin-top: 150px;
+
     .myProjectsHeader{
         color: white;
-        text-align: center;
         font-weight: 900;
     }
     .projectsDisplayWrapper {
+        margin: auto!important;
+
         width: 70%;
         height: auto;
         display: grid;
@@ -14,11 +17,9 @@ main {
         align-items: center;
         place-items: center;
         grid-gap: 50px;
-        padding: 30px;
         border-radius: 1%;
         background: white;
         margin: auto;
-        margin-bottom: 100px; /*Remove me after done*/
         background-color: black;
     }
 
@@ -28,7 +29,7 @@ main {
         text-align: center;
         border: 3px solid white;
         width: 400px;
-        height: 20vh;
+        height: 25vh;
         box-shadow: 1px 1px 20px white;
     }
 

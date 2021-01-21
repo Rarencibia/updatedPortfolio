@@ -1,0 +1,61 @@
+main {
+  width: 100%;
+  margin: auto;
+  border: 3px solid white;
+}
+main .myProjectsHeader {
+  color: white;
+  font-weight: 900;
+}
+main .projectsDisplayWrapper {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 3fr));
+  justify-content: center;
+  align-items: center;
+  place-items: center;
+  grid-gap: 50px;
+  padding: 30px;
+  border-radius: 1%;
+  background: white;
+  margin: auto;
+  background-color: black;
+}
+main .projectShowcase {
+  text-align: center;
+  border: 3px solid white;
+  width: 400px;
+  height: 20vh;
+  box-shadow: 1px 1px 20px white;
+}
+main .screenshotImg {
+  width: 100%;
+  height: 100%;
+}
+main .screenshotImg:hover {
+  transition: ease-in-out;
+  transition-duration: 0.2s;
+  opacity: 0.3;
+}
+main .githubCode {
+  width: 120px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  color: white;
+  border-radius: 10%;
+  background: black;
+  border: 1px solid white;
+}
+main .githubCode:hover {
+  cursor: pointer;
+  transition: ease-out;
+  transition-duration: 0.2s;
+  background-color: gray;
+}
+main a {
+  text-decoration: none;
+}
