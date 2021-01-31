@@ -2,7 +2,9 @@ footer {
     margin-top: 100px;
     width: 100%;
     height: auto;
+    
     .footerInformation {
+        z-index: -1!important;
         text-align: center;
         color: white;
     }   

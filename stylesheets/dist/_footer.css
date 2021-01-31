@@ -4,6 +4,7 @@ footer {
   height: auto;
 }
 footer .footerInformation {
+  z-index: -1 !important;
   text-align: center;
   color: white;
 }

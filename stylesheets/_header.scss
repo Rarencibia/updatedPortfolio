@@ -44,15 +44,19 @@ header {
     }
 
     .logoWrapper {
-        margin-top: 35px!important;
-
-        z-index: 1;
-        width: 30%;
-        text-align: center;
-        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
         margin: auto;
+        margin-top: 65px;
+        width: 30%;
+        height: auto;
+        z-index: -2;
+    }
 
-
+    .createName {
+        width: 100%;
     }
     .logo{
 
@@ -109,3 +113,75 @@ header {
 
 }
 
+.mobileNav {
+    display: none;
+}
+
+
+
+
+
+@media screen and (min-width: 200px) {
+    .logoWrapper{
+        width: 96%!important;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1100px)  {
+    .logoWrapper{
+        margin-top: 65px!important;
+        width: 60%!important;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 1101px)  {
+    .logoWrapper{
+        width: 30%!important;
+        margin: auto;
+    }
+}
+
+
+/*Mobile CSS Styles*/
+@media screen and (max-width: 600px) {
+    .mainNav {
+        display: none!important;
+    }
+
+    .mobileNav {
+        width: 100%;
+        height: auto;
+        display: flex!important;
+        align-items: flex-start;
+        position: fixed;
+        margin-left: 5px;
+
+        .mobileHamburger {
+            position: fixed;
+            margin-top: 10px;
+            width: 50px;
+            height: 50px;
+            background-color: white;
+            border-radius: 20%;
+            z-index: -1;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        .mobileNavMenu {
+            display: none;
+            width: 100%!important;
+            height: 100%!important;
+            background-color: black!important;
+        }
+
+        .mobileUL {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

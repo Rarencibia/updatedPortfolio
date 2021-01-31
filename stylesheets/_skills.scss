@@ -1,7 +1,9 @@
 .technologiesSection {
     margin-top: $separation-margin;
+    z-index: -2;
 
     .skillsInformationWrapper {
+        z-index: -2;
         background: gray;
     }
     .skillsList {

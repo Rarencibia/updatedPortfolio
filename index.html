@@ -9,17 +9,36 @@
 
 </head>
 <body>
+    <!--Background Image at top of page-->
     <img class="mainImage" src="images/codingImage.jpeg" alt="">
 
     <header id="topLink">
         <nav>
-            <ul>
-                <li><a href="#projectsLink">Projects</a></li>
-                <li><a href="#skillsLink">Skills</a></li>
-                <li><a href="#aboutLink">About</a></li>
-                <li><a href="#contactLink">Contact</a></li>
-            </ul>
+            <div class="mainNav">
+                <ul>
+                    <li><a href="#projectsLink">Projects</a></li>
+                    <li><a href="#skillsLink">Skills</a></li>
+                    <li><a href="#aboutLink">About</a></li>
+                    <li><a href="#contactLink">Contact</a></li>
+                </ul>
+            </div>
         </nav>
+
+        <div class="mobileNav" id="mobileNav">
+            <img class="mobileHamburger" src="./images/hamburger.png" alt="Hamburger Menu" id="mobileNavHamburger">
+
+            <div class="mobileNavMenu" id="mobileNavMenu">
+                <ul class="mobileUL" id="mobileUL">
+                    <li class="mobileLI"><a href="#projectsLink">Projects</a></li>
+                    <li class="mobileLI"><a href="#skillsLink">Skills</a></li>
+                    <li class="mobileLI"><a href="#aboutLink">About</a></li>
+                    <li class="mobileLI"><a href="#contactLink">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        
         <div class="logoHeader">
             <div class="logoWrapper">
                 <div class="logo" id="logo" data-aos="flip-left"><p class="logo" id="logoA">R</p></div>
@@ -130,18 +149,19 @@
 
 
     <footer>
-        <hgroup>
             <div class="footerInformation">
-                <h4>Robert Arencibia - Full Stack Web Developer</h4>
-                <h5>Let's bring your idea's to life</h5>
-                <h5><a href="#topLink">Back To Top</a></h5>
+                <hgroup>
+                    <h4>Robert Arencibia - Full Stack Web Developer</h4>
+                    <h5>Let's bring your idea's to life</h5>
+                    <h5><a href="#topLink">Back To Top</a></h5>
+                </hgroup>
             </div>
-        </hgroup>
 
     </footer>
 
     <script src="javascript/name.js"></script>
     <script src="javascript/skills.js"></script>
+    <script src="javascript/mobileNav.js"></script>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
