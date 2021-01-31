@@ -222,8 +222,8 @@ header .hiddenElement {
 }
 .mediaAndIntro .miniIntroP {
   margin: auto;
-  text-align: left;
-  width: 70%;
+  text-align: center;
+  width: 85%;
   line-height: 40px;
   font-size: 22px;
   font-weight: 600;
@@ -410,12 +410,14 @@ main a {
   justify-content: center;
   align-items: flex-start;
   padding: 50px;
-  text-align: left;
   gap: 30px;
 }
 .aboutMeWrapper .aboutMeP {
+  text-align: center;
   font-size: 30px;
   width: 50%;
+  letter-spacing: 2px;
+  word-spacing: 2px;
 }
 
 @media screen and (max-width: 1110px) {
