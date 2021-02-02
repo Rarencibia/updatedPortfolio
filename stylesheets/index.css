@@ -314,8 +314,14 @@ header .hiddenElement {
         -ms-flex-align: start;
             align-items: flex-start;
     position: fixed;
-    margin-left: 5px;
     z-index: 1;
+  }
+  .mobileNav #cancelButton {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: 10px;
   }
   .mobileNav .mobileHamburger {
     position: fixed;
