@@ -1,6 +1,7 @@
 let mobileNav = document.getElementById('mobileNav');
 let mobileNavMenu = document.getElementById('mobileNavMenu');
 let mobileNavHamburger = document.getElementById('mobileNavHamburger');
+let mobileLI = document.getElementsByClassName("mobileLI");
 
 //Open up mobile Navbar
 mobileNavHamburger.addEventListener("click", () => {
@@ -9,9 +10,12 @@ mobileNavHamburger.addEventListener("click", () => {
 });
 
 //Closing mobile Navbar
-document.getElementById("mobileUL").addEventListener("click", () => {
-    mobileNavMenu.style.display = "none";
-    mobileNavHamburger.style.display = "block";
-});
+for(let i = 0; i < mobileLI.length; i++){
+    mobileLI[i].addEventListener("click", () => {
+        mobileNavMenu.style.display = "none";
+        mobileNavHamburger.style.display = "block";
+    });
+    
+}
 
 

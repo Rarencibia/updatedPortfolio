@@ -4,7 +4,8 @@ var _this = void 0;
 
 var mobileNav = document.getElementById('mobileNav');
 var mobileNavMenu = document.getElementById('mobileNavMenu');
-var mobileNavHamburger = document.getElementById('mobileNavHamburger'); //Open up mobile Navbar
+var mobileNavHamburger = document.getElementById('mobileNavHamburger');
+var mobileLI = document.getElementsByClassName("mobileLI"); //Open up mobile Navbar
 
 mobileNavHamburger.addEventListener("click", function () {
   _this.mobileNavHamburger.style.display = "none"; //When you click on the hamburger, it disappears.
@@ -12,7 +13,9 @@ mobileNavHamburger.addEventListener("click", function () {
   mobileNavMenu.style.display = "flex";
 }); //Closing mobile Navbar
 
-document.getElementById("mobileUL").addEventListener("click", function () {
-  mobileNavMenu.style.display = "none";
-  mobileNavHamburger.style.display = "block";
-});
+for (var i = 0; i < mobileLI.length; i++) {
+  mobileLI[i].addEventListener("click", function () {
+    mobileNavMenu.style.display = "none";
+    mobileNavHamburger.style.display = "block";
+  });
+}

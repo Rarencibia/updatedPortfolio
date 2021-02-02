@@ -150,6 +150,10 @@ header {
         display: none!important;
     }
 
+    .logoWrapper {
+        margin-top: 30px!important;
+    }
+
     .mobileNav {
         width: 100%;
         height: auto;
@@ -157,6 +161,7 @@ header {
         align-items: flex-start;
         position: fixed;
         margin-left: 5px;
+        z-index: 1;
 
         .mobileHamburger {
             position: fixed;
