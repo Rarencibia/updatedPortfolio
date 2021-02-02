@@ -342,7 +342,7 @@ header .hiddenElement {
     background-color: black !important;
   }
   .mobileNav .mobileUL {
-    width: 100%;
+    width: 60%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -350,6 +350,7 @@ header .hiddenElement {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    text-align: center;
   }
 }
 
@@ -781,6 +782,9 @@ main a {
 @media screen and (max-width: 500px) {
   .contactBackground {
     width: 100% !important;
+  }
+  .leftContact {
+    margin-top: 10px;
   }
 }
 
