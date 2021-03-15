@@ -218,14 +218,22 @@ header {
     }
 }
 
-@media screen and (min-width: 1011px)  {
+@media screen and (min-width: 1011px){
     .name {
         width: 40%!important;
         justify-content: left!important;
     }
 }
 
-@media screen and (min-width: 1636px)  {
+@media screen and (min-width: 1510px){
+    .name {
+        width: 30%!important;
+
+    }
+}
+
+
+@media screen and (min-width: 2000px)  {
     .name {
         justify-content: center!important;
     }
