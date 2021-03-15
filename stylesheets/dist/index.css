@@ -74,6 +74,7 @@ header .logoHeader {
 }
 header .logoWrapper {
   display: flex;
+  border: 3px solid white;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -133,12 +134,19 @@ header #logoA {
   text-shadow: 3px 3px 10px blue;
   border: double white 3px;
   box-shadow: 3px 3px 10px white;
+  margin: auto;
 }
 header .name {
+  position: absolute;
   width: 100%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: left;
   align-items: center;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px solid white;
 }
 header .letterContainer {
   width: 60px;
@@ -239,6 +247,23 @@ header .hiddenElement {
     display: flex;
     flex-direction: column;
     text-align: center;
+  }
+}
+@media screen and (min-width: 669px) {
+  .name {
+    width: 65% !important;
+    justify-content: left !important;
+  }
+}
+@media screen and (min-width: 1011px) {
+  .name {
+    width: 40% !important;
+    justify-content: left !important;
+  }
+}
+@media screen and (min-width: 1636px) {
+  .name {
+    justify-content: center !important;
   }
 }
 .mediaAndIntro {
