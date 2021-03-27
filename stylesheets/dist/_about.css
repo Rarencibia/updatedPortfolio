@@ -1,0 +1,62 @@
+.aboutMeWrapper {
+  position: relative;
+  margin: auto;
+  width: 100%;
+}
+.aboutMeWrapper .avatarBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  object-fit: cover;
+  image-rendering: optimizeQuality;
+  filter: brightness(0.5);
+}
+.aboutMeWrapper .aboutMeHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.aboutMeWrapper .avatarImg {
+  margin-top: 200px;
+  width: 150px;
+  height: 150px;
+  box-shadow: -1px 1px 30px blue;
+  border-bottom: 3px red solid;
+  border-top: 4px black solid;
+  border-radius: 50%;
+}
+.aboutMeWrapper .aboutMeH1 {
+  z-index: 1;
+  margin-top: 200px;
+}
+.aboutMeWrapper .aboutMeInfoWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px;
+  gap: 30px;
+}
+.aboutMeWrapper .aboutMeP {
+  text-align: center;
+  font-size: 30px;
+  width: 50%;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+}
+
+@media screen and (max-width: 1110px) {
+  .aboutMeWrapper {
+    width: 100%;
+    padding: 0;
+  }
+  .aboutMeWrapper .aboutMeInfoWrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0px;
+    margin: auto;
+  }
+  .aboutMeWrapper .aboutMeP {
+    width: 80%;
+  }
+}

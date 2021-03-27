@@ -1,9 +1,18 @@
 .aboutMeWrapper {
     position: relative;
     margin: auto;
-    margin-top: $separation-margin;
-    width: 80%;
+    // margin-top: $separation-margin;
+    width: 100%;
 
+    .avatarBackground {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        object-fit: cover;
+        image-rendering: optimizeQuality;
+        filter: brightness(.50);
+    }
 
     .aboutMeHeader {
         display: flex;
@@ -12,12 +21,18 @@
     }
 
     .avatarImg {
+        margin-top: 200px;
         width: 150px;
         height: 150px;
         box-shadow: -1px 1px 30px blue;
         border-bottom: 3px red solid;
         border-top: 4px black solid;
         border-radius: 50%;
+    }
+
+    .aboutMeH1{
+        z-index: 1;
+        margin-top: 200px;
     }
 
     .aboutMeInfoWrapper {

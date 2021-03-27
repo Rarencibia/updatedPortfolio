@@ -1,8 +1,11 @@
 .technologiesSection {
     margin-top: $separation-margin;
     z-index: -2;
+    border-bottom: 1px solid blue;
+
 
     .skillsInformationWrapper {
+        border-top: 1px solid blue;
         z-index: -2;
         background: gray;
     }
