@@ -2,6 +2,7 @@ footer {
   margin-top: 100px;
   width: 100%;
   height: auto;
+  border-top: 5px solid white;
 }
 footer .footerInformation {
   z-index: -1 !important;

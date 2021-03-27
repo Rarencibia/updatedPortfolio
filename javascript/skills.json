@@ -19,8 +19,5 @@
         {"name": "vscode", "img": "../images/skillLogos/vscode.png"},
         {"name": "django", "img": "../images/skillLogos/django.png"},
         {"name": "python", "img": "../images/skillLogos/python.webp"}
-
-
-
     ]
 }

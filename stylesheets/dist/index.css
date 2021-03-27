@@ -380,10 +380,15 @@ main .projectShowcase {
   width: 400px;
   height: 25vh;
   box-shadow: 1px 1px 20px white;
+  transition: 0.4s ease-in-out;
+}
+main .projectShowcase:hover {
+  transform: scale(1.1);
 }
 main .screenshotImg {
   width: 100%;
   height: 100%;
+  transition: 2s ease-in-out;
 }
 main .screenshotImg:hover {
   transition: ease-in-out;
@@ -451,6 +456,7 @@ main a {
   }
 }
 .aboutMeWrapper {
+  position: relative;
   margin: auto;
   margin-top: 300px;
   width: 80%;
@@ -463,6 +469,10 @@ main a {
 .aboutMeWrapper .avatarImg {
   width: 150px;
   height: 150px;
+  box-shadow: -1px 1px 30px blue;
+  border-bottom: 3px red solid;
+  border-top: 4px black solid;
+  border-radius: 50%;
 }
 .aboutMeWrapper .aboutMeInfoWrapper {
   display: flex;
@@ -564,6 +574,7 @@ footer {
   margin-top: 100px;
   width: 100%;
   height: auto;
+  border-top: 5px solid white;
 }
 footer .footerInformation {
   z-index: -1 !important;
