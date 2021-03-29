@@ -2,6 +2,7 @@
   position: relative;
   margin: auto;
   width: 100%;
+  height: auto;
 }
 .aboutMeWrapper .avatarBackground {
   position: absolute;
@@ -11,6 +12,7 @@
   object-fit: cover;
   image-rendering: optimizeQuality;
   filter: brightness(0.5);
+  height: 100%;
 }
 .aboutMeWrapper .aboutMeHeader {
   display: flex;

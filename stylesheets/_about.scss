@@ -3,6 +3,7 @@
     margin: auto;
     // margin-top: $separation-margin;
     width: 100%;
+    height: auto;
 
     .avatarBackground {
         position: absolute;
@@ -12,6 +13,7 @@
         object-fit: cover;
         image-rendering: optimizeQuality;
         filter: brightness(.50);
+        height: 100%;
     }
 
     .aboutMeHeader {
@@ -69,5 +71,9 @@
             width: 80%;
         }
     }
+
+}
+
+@media screen and (min-width: 2000px){
 
 }

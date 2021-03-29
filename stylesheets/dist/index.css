@@ -461,6 +461,7 @@ main a {
   position: relative;
   margin: auto;
   width: 100%;
+  height: auto;
 }
 .aboutMeWrapper .avatarBackground {
   position: absolute;
@@ -470,6 +471,7 @@ main a {
   object-fit: cover;
   image-rendering: optimizeQuality;
   filter: brightness(0.5);
+  height: 100%;
 }
 .aboutMeWrapper .aboutMeHeader {
   display: flex;
@@ -521,7 +523,6 @@ main a {
 }
 .contactWrapper {
   color: black;
-  margin-top: 300px !important;
   width: 80%;
   margin: auto;
   height: 200px;
@@ -560,6 +561,11 @@ main a {
   width: 50px;
   height: 38px;
 }
+.contactWrapper .contactInformationHeader {
+  color: white;
+  position: relative;
+  z-index: 1;
+}
 
 @media screen and (max-width: 960px) {
   .contactFlex {
@@ -582,10 +588,12 @@ main a {
   }
 }
 footer {
+  position: relative;
   margin-top: 50px;
   width: 100%;
   height: auto;
   border-top: 1px solid white;
+  z-index: 1;
 }
 footer .footerInformation {
   z-index: -1 !important;
