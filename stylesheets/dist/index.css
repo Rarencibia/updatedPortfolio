@@ -351,6 +351,11 @@ header .hiddenElement {
     transform: rotate(-90deg);
   }
 }
+@media screen and (max-width: 550px) {
+  .miniIntroP {
+    text-align: left !important;
+  }
+}
 main {
   width: 100% !important;
   margin-top: 150px;
@@ -519,6 +524,11 @@ main a {
   }
   .aboutMeWrapper .aboutMeP {
     width: 80%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .aboutMeP {
+    text-align: left !important;
   }
 }
 .contactWrapper {
