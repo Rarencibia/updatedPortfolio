@@ -8,16 +8,8 @@
         {"name": "sass", "img": "../images/skillLogos/sass.svg"},
         {"name": "express", "img": "../images/skillLogos/nodeexpress.png"},
         {"name": "bootstrap", "img": "../images/skillLogos/bootstrap.svg"},
-        {"name": "pug", "img": "../images/skillLogos/pug.png"},
         {"name": "react", "img": "../images/skillLogos/react.svg"},
         {"name": "github", "img": "../images/skillLogos/github.png"},
-        {"name": "aws", "img": "../images/skillLogos/aws.png"},
-        {"name": "powershell", "img": "../images/skillLogos/powershell.png"},
-        {"name": "ubuntu", "img": "../images/skillLogos/ubuntu.png"},
-        {"name": "wordpress", "img": "../images/skillLogos/wordpress.svg"},
-        {"name": "atom", "img": "../images/skillLogos/atom.png"},
-        {"name": "vscode", "img": "../images/skillLogos/vscode.png"},
-        {"name": "django", "img": "../images/skillLogos/django.png"},
         {"name": "python", "img": "../images/skillLogos/python.webp"}
     ]
 }
