@@ -292,6 +292,11 @@ header .hiddenElement {
   font-size: 30px;
   font-weight: 900;
 }
+.mediaAndIntro .slogan {
+  color: #fdd4b0;
+  font-style: italic;
+  font-size: 0.9rem;
+}
 .mediaAndIntro .socialMediaLinksWrapper {
   margin-top: 15%;
   min-width: 80px;
@@ -431,6 +436,12 @@ main a {
 .technologiesSection .skillsInformationWrapper {
   border-top: 1px solid blue;
   z-index: -2;
+  background: #bdc3c7;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2c3e50, #bdc3c7);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .technologiesSection .skillsList {
   text-align: center;
@@ -444,7 +455,6 @@ main a {
   gap: 20px;
   width: 100%;
   padding: 20px;
-  background-image: url("../skillLogos/trythis.jpeg");
 }
 .technologiesSection .skillsImg {
   width: 120px;
@@ -508,6 +518,7 @@ main a {
   width: 50%;
   letter-spacing: 2px;
   word-spacing: 2px;
+  color: #fdd4b0;
 }
 
 @media screen and (max-width: 1110px) {
@@ -564,7 +575,10 @@ main a {
   align-items: center;
 }
 .contactWrapper .contactLinks:hover {
-  opacity: 0.6;
+  color: white;
+}
+.contactWrapper a {
+  color: blueviolet;
 }
 .contactWrapper .contactLogo {
   width: 50px;

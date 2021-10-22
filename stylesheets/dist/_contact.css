@@ -32,7 +32,10 @@
   align-items: center;
 }
 .contactWrapper .contactLinks:hover {
-  opacity: 0.6;
+  color: white;
+}
+.contactWrapper a {
+  color: blueviolet;
 }
 .contactWrapper .contactLogo {
   width: 50px;

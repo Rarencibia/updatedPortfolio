@@ -43,9 +43,15 @@
         align-items: center;
 
         &:hover {
-            opacity: .60;
+            color: white;
         }
     }
+
+    a {
+        color: blueviolet;
+    }
+
+
 
     .contactLogo {
         width: 50px;
