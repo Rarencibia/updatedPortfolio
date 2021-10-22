@@ -431,7 +431,6 @@ main a {
 .technologiesSection .skillsInformationWrapper {
   border-top: 1px solid blue;
   z-index: -2;
-  background: gray;
 }
 .technologiesSection .skillsList {
   text-align: center;
@@ -444,8 +443,8 @@ main a {
   place-items: center;
   gap: 20px;
   width: 100%;
-  background: gray;
   padding: 20px;
+  background-image: url("../skillLogos/trythis.jpeg");
 }
 .technologiesSection .skillsImg {
   width: 120px;

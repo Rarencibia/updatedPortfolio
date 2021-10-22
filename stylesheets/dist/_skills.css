@@ -1,0 +1,37 @@
+.technologiesSection {
+  z-index: -2;
+  border-bottom: 1px solid blue;
+}
+.technologiesSection .skillsInformationWrapper {
+  border-top: 1px solid blue;
+  z-index: -2;
+}
+.technologiesSection .skillsList {
+  text-align: center;
+}
+.technologiesSection .skillsWrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 5fr));
+  justify-content: center;
+  align-items: center;
+  place-items: center;
+  gap: 20px;
+  width: 100%;
+  padding: 20px;
+  background-image: url("../images/skillLogos/trythis.jpeg");
+}
+.technologiesSection .skillsImg {
+  width: 120px;
+  height: 80px;
+  object-fit: contain;
+}
+.technologiesSection .skillsName {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 720px) {
+  .skillsWrapper {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 2fr)) !important;
+  }
+}

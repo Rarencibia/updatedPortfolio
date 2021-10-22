@@ -7,7 +7,7 @@
     .skillsInformationWrapper {
         border-top: 1px solid blue;
         z-index: -2;
-        background: gray;
+        
     }
     .skillsList {
 
@@ -23,8 +23,8 @@
         place-items: center;
         gap: 20px;
         width: 100%;
-        background: gray;
         padding: 20px;
+        background-image: url('../skillLogos/trythis.jpeg');
     }
 
     .skillsImg {
