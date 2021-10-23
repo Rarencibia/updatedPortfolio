@@ -534,11 +534,12 @@ main a {
   }
   .aboutMeWrapper .aboutMeP {
     width: 80%;
+    text-align: center;
   }
 }
 @media screen and (max-width: 550px) {
   .aboutMeP {
-    text-align: left !important;
+    text-align: center !important;
   }
 }
 .contactWrapper {
