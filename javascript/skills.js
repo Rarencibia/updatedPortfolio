@@ -23,7 +23,7 @@ async function getData(){
 
         skillsWrapper.appendChild(createContainer);
         createContainer.appendChild(addImage);
-        createContainer.appendChild(writeName);
+        createContainer.appendChild(writeName); 
 
         
     };

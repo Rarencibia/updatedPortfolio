@@ -5,6 +5,12 @@
 .technologiesSection .skillsInformationWrapper {
   border-top: 1px solid blue;
   z-index: -2;
+  background: #bdc3c7;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2c3e50, #bdc3c7);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .technologiesSection .skillsList {
   text-align: center;
@@ -18,7 +24,6 @@
   gap: 20px;
   width: 100%;
   padding: 20px;
-  background-image: url("../images/skillLogos/trythis.jpeg");
 }
 .technologiesSection .skillsImg {
   width: 120px;
