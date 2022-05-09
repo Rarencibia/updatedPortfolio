@@ -7,9 +7,10 @@ var timer = function timer(ms) {
   return new Promise(function (res) {
     return setTimeout(res, ms);
   });
-};
+}; //transitionend ()
 
-document.getElementById("logo").addEventListener("transitionend", function loadLetters() {
+
+document.getElementById("logo").addEventListener("load", function loadLetters() {
   var i, letterContainer;
   return regeneratorRuntime.async(function loadLetters$(_context) {
     while (1) {
