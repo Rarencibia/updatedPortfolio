@@ -81,7 +81,8 @@ header .logoWrapper {
   margin-top: 65px;
   width: 30%;
   height: auto;
-  z-index: -2;
+  z-index: 1;
+  gap: 10px;
 }
 header .createName {
   width: 100%;
