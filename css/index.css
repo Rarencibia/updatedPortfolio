@@ -293,7 +293,6 @@ header .hiddenElement {
 
 @media screen and (min-width: 200px) {
   .logoWrapper {
-    width: 96% !important;
     margin: auto;
   }
 }
@@ -331,7 +330,7 @@ header .hiddenElement {
         -ms-flex-align: start;
             align-items: flex-start;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
   }
   .mobileNav #cancelButton {
     width: 50px;
@@ -347,7 +346,7 @@ header .hiddenElement {
     height: 50px;
     background-color: white;
     border-radius: 20%;
-    z-index: -1;
+    z-index: 1;
   }
   .mobileNav .mobileHamburger:hover {
     cursor: pointer;
@@ -904,6 +903,9 @@ main a {
 @media screen and (max-width: 500px) {
   .contactBackground {
     width: 100% !important;
+  }
+  .contactFlex {
+    padding: 10px;
   }
 }
 

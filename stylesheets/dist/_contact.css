@@ -73,4 +73,8 @@
   .contactBackground {
     width: 100% !important;
   }
+
+  .contactFlex {
+    padding: 10px;
+  }
 }
