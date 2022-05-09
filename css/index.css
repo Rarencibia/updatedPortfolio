@@ -753,6 +753,7 @@ main a {
   letter-spacing: 2px;
   word-spacing: 2px;
   color: #fdd4b0;
+  z-index: 1;
 }
 
 @media screen and (max-width: 1110px) {
