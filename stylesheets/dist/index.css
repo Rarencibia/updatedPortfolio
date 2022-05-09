@@ -496,6 +496,7 @@ main a {
   border-bottom: 3px red solid;
   border-top: 4px black solid;
   border-radius: 50%;
+  z-index: 1;
 }
 .aboutMeWrapper .aboutMeH1 {
   z-index: 1;
