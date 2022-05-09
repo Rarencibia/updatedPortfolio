@@ -179,9 +179,13 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({
-          duration: 2200,
-          easing: 'ease'
+        startEvent: 'load',
+        disableMutationObserver: false,
+        duration: 2200,
+        easing: 'ease'
       });
+      AOS.refresh(true); 
+
     </script>
 
 
