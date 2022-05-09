@@ -46,8 +46,7 @@
         
         <div class="logoHeader">
             <div class="logoWrapper">
-                <div class="logo" id="logo" ><p class="logo" id="logoA">R</p></div>
-                <!-- data-aos="flip-left" -->
+                <div class="logo" id="logo" data-aos="flip-left"><p class="logo" id="logoA">R</p></div>
                 <div class="createName">
                     <div class="name" id="name"></div>
                 </div>
@@ -119,8 +118,7 @@
             <div class="aboutMeWrapper">
                 <img class="avatarBackground" src="images/avatarBackground.jpg" alt="">
                 <div class="aboutMeHeader">
-                    <img class="avatarImg" src="images/avatar.png" alt="My avatar" title="Avatar Selfie">
-                    <!-- data-aos="flip-right" -->
+                    <img class="avatarImg" src="images/avatar.png" alt="My avatar" title="Avatar Selfie" data-aos="flip-right">
                     <h1 class="aboutMeH1">A Little About Me</h1>
                 </div>
                 <div class="aboutMeInfoWrapper" data-aos="flip-up">
@@ -181,6 +179,7 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({
+        disable: 'mobile',
         startEvent: 'load',
         disableMutationObserver: false,
         duration: 2200,
