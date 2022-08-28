@@ -41,7 +41,7 @@ window.addEventListener("load", function loadLetters() {
           letterContainer.textContent = myName[i];
           nameContainer.appendChild(letterContainer);
           _context.next = 9;
-          return regeneratorRuntime.awrap(timer(300));
+          return regeneratorRuntime.awrap(timer(180));
 
         case 9:
           i++;

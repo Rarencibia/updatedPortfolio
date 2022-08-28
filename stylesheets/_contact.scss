@@ -67,13 +67,41 @@
         font-weight: 900;
         font-size: 3rem;
         text-shadow: 2px 2px 2px black;
+        color: $special-font-color;
+
     }
 
     a {
         color: #fdd4b0;
     }
 
+    .form-wrapper {
+        width: 50%;
+        text-align: center;
+        padding: 20px;
+        background-color: white;
+    }
+
+    .form-input-wrapper{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin: auto;
+    }
+
+    .form-input-wrapper input {
+        border-radius: 2%;
+        height: 30px;
+        font-size: 1rem;
+    }
+
+
 }
+
+
+
+
+
 
 
 @media screen and (max-width: 960px) {
@@ -100,6 +128,13 @@
 //         margin-top: 10px;
 //     }
 // }
+
+@media screen and (max-device-width: 480px) and (orientation: portrait){
+    .form-wrapper {
+        width: 100%!important;
+    }
+  }
+
 
 
 // @media screen and (max-width: 960px){

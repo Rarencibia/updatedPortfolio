@@ -57,6 +57,24 @@
 .contactWrapper a {
   color: #fdd4b0;
 }
+.contactWrapper .form-wrapper {
+  width: 50%;
+  border: 1px inset yellow;
+  padding: 20px;
+  background-image: url("../../images/secondOption.jpeg");
+  color: white;
+}
+.contactWrapper .form-input-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: auto;
+}
+.contactWrapper .form-input-wrapper input {
+  border-radius: 2%;
+  height: 30px;
+  font-size: 1rem;
+}
 
 @media screen and (max-width: 960px) {
   .contactFlex {

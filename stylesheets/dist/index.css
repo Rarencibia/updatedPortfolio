@@ -105,7 +105,7 @@ header .logo {
   border: 3px solid white;
   animation-name: logo-animation;
   animation-delay: 1s;
-  animation-duration: 7s;
+  animation-duration: 1.8s;
   animation-timing-function: ease-in-out;
 }
 @keyframes logo-animation {
@@ -599,9 +599,27 @@ main a {
   font-weight: 900;
   font-size: 3rem;
   text-shadow: 2px 2px 2px black;
+  color: #fdd4b0;
 }
 .contactWrapper a {
   color: #fdd4b0;
+}
+.contactWrapper .form-wrapper {
+  width: 50%;
+  text-align: center;
+  padding: 20px;
+  background-color: white;
+}
+.contactWrapper .form-input-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: auto;
+}
+.contactWrapper .form-input-wrapper input {
+  border-radius: 2%;
+  height: 30px;
+  font-size: 1rem;
 }
 
 @media screen and (max-width: 960px) {
@@ -622,6 +640,11 @@ main a {
 
   .contactFlex {
     padding: 10px;
+  }
+}
+@media screen and (max-width: 500px) and (max-device-width: 480px) and (orientation: portrait) {
+  .form-wrapper {
+    width: 100% !important;
   }
 }
 footer {

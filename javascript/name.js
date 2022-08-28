@@ -1,6 +1,5 @@
 let nameContainer = document.getElementById("name");
-
-let myName = ["A","R", "E", "N", "C","I", "B","I", "A"];
+let myName = ["A", "R", "E", "N", "C","I", "B","I", "A"];
 
 
 const timer = ms => new Promise(res => setTimeout(res, ms));
@@ -43,7 +42,7 @@ async function loadLetters () { // We need to wrap the loop into an async functi
         
 
 
-        await timer(300); // then the created Promise can be awaited
+        await timer(180); // then the created Promise can be awaited
 
 
     }
