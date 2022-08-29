@@ -514,7 +514,7 @@ main a {
   gap: 30px;
 }
 .aboutMeWrapper .aboutMeP {
-  text-align: center;
+  text-align: left;
   font-size: 30px;
   width: 50%;
   letter-spacing: 2px;
